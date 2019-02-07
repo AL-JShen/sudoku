@@ -1,14 +1,12 @@
 """
-SUDOKU (NUMBER PLACE) PUZZLE GENERATOR
-by Arel Cordero November 12, 2005
-
-This program is released into the public domain.
-Revision 3
+Adapted from base code by Arel Cordero 
+https://www.ocf.berkeley.edu/~arel/sudoku/main.html
 """
 
 import random, copy, csv
 from itertools import chain
 
+"""
 sample  = [ [3,4,1,2,9,7,6,8,5],
             [2,5,6,8,3,4,9,7,1],
             [9,8,7,1,5,6,3,2,4],
@@ -19,7 +17,7 @@ sample  = [ [3,4,1,2,9,7,6,8,5],
             [4,1,9,5,6,2,7,3,8],
             [7,2,8,3,4,1,5,6,9] ]
 
-"""
+
 Randomly arrange numbers in a grid while making all rows, columns and
 squares (sub-grids) contain the numbers 1 through 9.
 
